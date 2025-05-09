@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+custom_uploader/__init__.py
+custom_uploader/example.py
+streamlit_custom_uploader.egg-info/PKG-INFO
+streamlit_custom_uploader.egg-info/SOURCES.txt
+streamlit_custom_uploader.egg-info/dependency_links.txt
+streamlit_custom_uploader.egg-info/requires.txt
+streamlit_custom_uploader.egg-info/top_level.txt

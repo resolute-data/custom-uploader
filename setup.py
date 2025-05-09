@@ -6,7 +6,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="streamlit-custom-uploader",
+    name="custom-uploader",
     version="0.0.1",
     author="tomka",
     author_email="tkatsika@gmail.com",

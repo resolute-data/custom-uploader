@@ -13,9 +13,18 @@ pip install streamlit-custom-component
 ```python
 import streamlit as st
 
-from gs_uploader import gs_uploader
+from custom_uploader import custom_uploader
 
-value = gs_uploader()
+uploaded = custom_uploader(accept=".pdf,.docx", limit=32)
 
-st.write(value)
+if uploaded and isinstance(uploaded, dict):
+    import base64
+    content_bytes = base64.b64decode(uploaded["content"])
+
+    with open(uploaded["name"], "wb") as f:
+        f.write(content_bytes)
+
+    st.success(f"Saved {uploaded['name']} ({uploaded['size']} bytes)")
+
+
 ```
